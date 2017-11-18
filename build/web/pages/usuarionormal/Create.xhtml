@@ -1,0 +1,349 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <title>Dashboard Template for BootsFaces</title>
+        <meta name="author" content="Riccardo Massera"></meta>
+        
+    </h:head>
+    <h:body style="padding-top: 60px">
+        <h:outputScript library="holder" name="holder.js" />
+        <!--script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.5.2/holder.min.js"></script-->
+        <b:navBar brand="Tickets" brandHref="#" inverse="true" fixed="top" fluid="true">
+            
+            <b:navbarLinks pull="right">
+       
+            </b:navbarLinks>
+            
+        </b:navBar>
+        <b:container fluid="true">
+            <b:row>
+               
+                
+                <b:column col-sm="9" offset-sm="3" col-md="10" offset="1" styleClass="main">
+                   
+                    <h1>Crear Usuario</h1>
+                    
+                     <b:form horizontal="true">
+                         
+                         
+       
+                   
+                    
+                
+                   
+           <b:inputText label="Nombre" id="nombre" value="#{usuarionormalController.selected.nombre}" title="#{bundle.CreateUsuarionormalTitle_nombre}" required="true" requiredMessage="#{bundle.CreateUsuarionormalRequiredMessage_nombre}"/>
+                    
+          <b:selectOneMenu label ="Dependencia" id="dependencia" value="#{usuarionormalController.selected.dependencia}" title="#{bundle.CreateUsuarionormalTitle_dependencia}"   colMd="6" required="true"  labelColMd="2" class="opcion" >
+            <f:selectItem itemLabel="Selecciona" itemValue="" />
+            <f:selectItem itemLabel="Bachillerato 1" itemValue="Bachillerato 1" />
+            <f:selectItem itemLabel="Bachillerato 10" itemValue="Bachillerato 10" />
+            <f:selectItem itemLabel="Bachillerato 11" itemValue="Bachillerato 11" />
+            <f:selectItem itemLabel="Bachillerato 12" itemValue="Bachillerato 12" />
+            <f:selectItem itemLabel="Bachillerato 13" itemValue="Bachillerato 13" />
+            <f:selectItem itemLabel="Bachillerato 14" itemValue="Bachillerato 14" />
+            <f:selectItem itemLabel="Bachillerato 15" itemValue="Bachillerato 15" />
+            <f:selectItem itemLabel="Bachillerato 16" itemValue="Bachillerato 16" />
+            <f:selectItem itemLabel="Bachillerato 17" itemValue="Bachillerato 17" />
+            <f:selectItem itemLabel="Bachillerato 18" itemValue="Bachillerato 18" />
+            <f:selectItem itemLabel="Bachillerato 18" itemValue="Bachillerato 19" />
+            <f:selectItem itemLabel="Bachillerato 2" itemValue="Bachillerato 2" />
+            <f:selectItem itemLabel="Bachillerato 20" itemValue="Bachillerato 20" />
+            <f:selectItem itemLabel="Bachillerato 21" itemValue="Bachillerato 21" />
+            <f:selectItem itemLabel="Bachillerato 22" itemValue="Bachillerato 22" />
+            <f:selectItem itemLabel="Bachillerato 23" itemValue="Bachillerato 23" />
+            <f:selectItem itemLabel="Bachillerato 24" itemValue="Bachillerato 24" />
+            <f:selectItem itemLabel="Bachillerato 25" itemValue="Bachillerato 25" />
+            <f:selectItem itemLabel="Bachillerato 26" itemValue="Bachillerato 26" />
+            <f:selectItem itemLabel="Bachillerato 27" itemValue="Bachillerato 27" />
+            <f:selectItem itemLabel="Bachillerato 28" itemValue="Bachillerato 28" />
+            <f:selectItem itemLabel="Bachillerato 29" itemValue="Bachillerato 29" />
+            <f:selectItem itemLabel="Bachillerato 3" itemValue="Bachillerato 3" />
+            <f:selectItem itemLabel="Bachillerato 30" itemValue="Bachillerato 30" />
+            <f:selectItem itemLabel="Bachillerato 31" itemValue="Bachillerato 31" />
+            <f:selectItem itemLabel="Bachillerato 32" itemValue="Bachillerato 32" />
+            <f:selectItem itemLabel="Bachillerato 33" itemValue="Bachillerato 33" />
+            <f:selectItem itemLabel="Bachillerato 4" itemValue="Bachillerato 4" />
+            <f:selectItem itemLabel="Bachillerato 5" itemValue="Bachillerato 5" />
+            <f:selectItem itemLabel="Bachillerato 6" itemValue="Bachillerato 6" />
+            <f:selectItem itemLabel="Bachillerato 7" itemValue="Bachillerato 7" />
+            <f:selectItem itemLabel="Bachillerato 8" itemValue="Bachillerato 8" />
+            <f:selectItem itemLabel="Bachillerato 9" itemValue="Bachillerato 9" />
+            <f:selectItem itemLabel="Bachillerato 11" itemValue="Bachillerato 21" />
+            <f:selectItem itemLabel="Escuela de Filosofía" itemValue="Escuela de Filosofía" />
+            <f:selectItem itemLabel="Escuela de Mercadotecnia" itemValue="Escuela de Mercadotecnia" />
+            <f:selectItem itemLabel="Escuela de Turismo y Gastronomía" itemValue="Escuela de Mercadotecnia" />
+            <f:selectItem itemLabel="Escuela Técnica de Enfermería" itemValue="Escuela Técnica de Enfermería" />
+            <f:selectItem itemLabel="Facultad de Arquitectura y Diseño" itemValue="Facultad de Arquitectura y Diseño" />
+            <f:selectItem itemLabel="Facultad de Ciencias" itemValue="Facultad de Ciencias" />
+            <f:selectItem itemLabel="Facultad de Ciencias Biológicas y Agropecuarias" itemValue="Facultad de Ciencias Biológicas y Agropecuarias" />
+            <f:selectItem itemLabel="Facultad de Ciencias de la Educación" itemValue="Facultad de Ciencias de la Educación" />
+            <f:selectItem itemLabel="Facultad de Ciencias Marinas" itemValue="Facultad de Ciencias Marinas" />
+            <f:selectItem itemLabel="Facultad de Ciencias Políticas y Sociales" itemValue="Facultad de Ciencias Políticas y Sociales" />
+            <f:selectItem itemLabel="Facultad de Ciencias Químicas" itemValue="Facultad de Ciencias Químicas" />
+            <f:selectItem itemLabel="Facultad de Comercio Exterior" itemValue="Facultad de Comercio Exterior" />
+            <f:selectItem itemLabel="Facultad de Contabilidad y Administración de Colima" itemValue="Facultad de Contabilidad y Administración de Colima" />
+            <f:selectItem itemLabel="Facultad de Contabilidad y Administración de Manzanillo" itemValue="Facultad de Contabilidad y Administración de Manzanillo" />
+            <f:selectItem itemLabel="Facultad de Contabilidad y Administración de Tecomán" itemValue="Facultad de Contabilidad y Administración de Tecomán" />
+            <f:selectItem itemLabel="Facultad de Derecho" itemValue="Facultad de Derecho" />
+            <f:selectItem itemLabel="Facultad de Economía" itemValue="Facultad de Economía" />
+            <f:selectItem itemLabel="Facultad de Enfermería" itemValue="Facultad de Enfermería" />
+            <f:selectItem itemLabel="Facultad de Ingeniería Civil" itemValue="Facultad de Ingeniería Civil" />
+            <f:selectItem itemLabel="Facultad de Ingeniería Electromecánica" itemValue="Facultad de Ingeniería Electromecánica" />
+            <f:selectItem itemLabel="Facultad de Ingeniería Mecánica y Eléctrica" itemValue="Facultad de Ingeniería Mecánica y Eléctrica" />
+            <f:selectItem itemLabel="Facultad de Lenguas Extranjeras" itemValue="Facultad de Lenguas Extranjeras" />
+            <f:selectItem itemLabel="Facultad de Letras y Comunicación" itemValue="Facultad de Letras y Comunicación" />
+            <f:selectItem itemLabel="Facultad de Medicina" itemValue="Facultad de Medicina" />
+            <f:selectItem itemLabel="Facultad de Medicina Veterinaria y Zootecnia" itemValue="Facultad de Medicina Veterinaria y Zootecnia" />
+            <f:selectItem itemLabel="Facultad de Pedagogía" itemValue="Facultad de Pedagogía" />
+            <f:selectItem itemLabel="Facultad de Psicología" itemValue="Facultad de Psicología" />
+            <f:selectItem itemLabel="Facultad de Telemática" itemValue="Facultad de Telemática" />
+            <f:selectItem itemLabel="Facultad de Trabajo Social" itemValue="Facultad de Trabajo Social" />
+            <f:selectItem itemLabel="Facultad de Turismo" itemValue="Facultad de Turismo" />
+            <f:selectItem itemLabel="Instituto Universitario de Bellas Artes" itemValue="Instituto Universitario de Bellas Artes" />
+            <f:selectItem itemLabel="Centro de Desarrollo de la Familia Universitaria" itemValue="Centro de Desarrollo de la Familia Universitaria" />
+            <f:selectItem itemLabel="Centro de Investigación de Estadística Multivariante Aplicada" itemValue="Centro de Investigación de Estadística Multivariante Aplicada" />
+            <f:selectItem itemLabel="Centro de Periodismo Universitario" itemValue="Centro de Periodismo Universitario" />
+            <f:selectItem itemLabel="Centro de Tecnología Educativa" itemValue="Centro de Tecnología Educativa" />
+            <f:selectItem itemLabel="Centro Universitario de Estudios de Género" itemValue="Centro Universitario de Estudios de Género" />
+            <f:selectItem itemLabel="Centro Universitario de Estudios e Investigaciones de Vulcanología" itemValue="Centro Universitario de Estudios e Investigaciones de Vulcanología" />
+            <f:selectItem itemLabel="Centro Universitario de Estudios E Investigaciones Sobre La Cuenca del Pacífico-Centro de Estudios APEC" itemValue="Centro Universitario de Estudios E Investigaciones Sobre La Cuenca del Pacífico-Centro de Estudios APEC" />
+            <f:selectItem itemLabel="Centro Universitario de Gestión Ambiental" itemValue="Centro Universitario de Gestión Ambiental" />
+            <f:selectItem itemLabel="Centro Universitario de Investigación en Ciencias del Ambiente" itemValue="Centro Universitario de Investigación en Ciencias del Ambiente" />
+            <f:selectItem itemLabel="Centro Universitario de Investigaciones Biomédicas" itemValue="Centro Universitario de Investigaciones Biomédicas" />
+            <f:selectItem itemLabel="Centro Universitario de Investigaciones en Ciencias Básicas" itemValue="Centro Universitario de Investigaciones en Ciencias Básicas" />
+            <f:selectItem itemLabel="Centro Universitario de Investigaciones Jurídicas" itemValue="Centro Universitario de Investigaciones Jurídicas" />
+            <f:selectItem itemLabel="Centro Universitario de Investigaciones Oceanológicas" itemValue="Centro Universitario de Investigación en Ciencias del Ambiente" />
+            <f:selectItem itemLabel="Centro Universitario de Investigaciones Sociales" itemValue="Centro Universitario de Investigaciones Sociales" />
+            <f:selectItem itemLabel="Centro Universitario de Investigaciones y Desarrollo Agropecuario" itemValue="
+Centro Universitario de Investigaciones y Desarrollo Agropecuario" />
+            <f:selectItem itemLabel="Contraloría General" itemValue="Contraloría General" />
+            <f:selectItem itemLabel="Contraloría Social" itemValue="Contraloría Social" />
+            <f:selectItem itemLabel="Coordinación de Planeación y Desarrollo Institucional" itemValue="Coordinación de Planeación y Desarrollo Institucional" />
+            <f:selectItem itemLabel="Coordinación General Administrativa y Financiera" itemValue="Coordinación General Administrativa y Financiera" />
+            <f:selectItem itemLabel="
+Coordinación General de Comunicación Social" itemValue="
+Coordinación General de Comunicación Social" />
+            <f:selectItem itemLabel="
+Coordinación General de Docencia" itemValue="
+Coordinación General de Docencia" />
+            <f:selectItem itemLabel="Coordinación General de Extensión" itemValue="Coordinación General de Extensión" />
+            <f:selectItem itemLabel="Coordinación General de Investigación Científica" itemValue="Coordinación General de Investigación Científica" />
+            <f:selectItem itemLabel="
+Coordinación General de Tecnologías de Información" itemValue="
+Coordinación General de Tecnologías de Información" />
+            <f:selectItem itemLabel="
+Coordinación General de Tecnologías de Información" itemValue="
+Coordinación General de Tecnologías de Información" />
+            <f:selectItem itemLabel="
+Delegación Colima" itemValue="
+Delegación Colima" />
+            <f:selectItem itemLabel="Delegación Coquimatlán" itemValue="Delegación Coquimatlán" />
+            <f:selectItem itemLabel="Delegación Manzanillo" itemValue="Delegación Manzanillo" />
+            <f:selectItem itemLabel="Delegación Tecomán" itemValue="Delegación Tecomán" />
+            <f:selectItem itemLabel="Delegación Villa de Álvarez" itemValue="Delegación Villa de Álvarez" />
+            <f:selectItem itemLabel="Rectoría" itemValue="Rectoría" />
+            <f:selectItem itemLabel="Secretaría General" itemValue="Secretaría General" />
+            <f:selectItem itemLabel="Dirección General de Vinculación con Egresados" itemValue="Dirección General de Vinculación con Egresados" />
+            <f:selectItem itemLabel="Dirección General de Transferencia Tecnológica" itemValue="Dirección General de Transferencia Tecnológica" />
+            <f:selectItem itemLabel="Dirección General de Televisión Universitaria" itemValue="Dirección General de Televisión Universitaria" />
+            <f:selectItem itemLabel="Dirección General de Tecnologías de Información" itemValue="Dirección General de Tecnologías de Información" />
+            <f:selectItem itemLabel="Dirección General de Servicios Universitarios" itemValue="Dirección General de Servicios Universitarios" />
+            <f:selectItem itemLabel="Dirección General de Servicios Telemáticos" itemValue="Dirección General de Servicios Telemáticos" />
+            <f:selectItem itemLabel="Dirección General de Servicios Administrativos" itemValue="Dirección General de Servicios Administrativos" />
+            <f:selectItem itemLabel="Dirección General de Servicio Social y Práctica Profesional" itemValue="Dirección General de Servicio Social y Práctica Profesional" />
+            <f:selectItem itemLabel="Dirección General de Relaciones Internacionales y Cooperación Académica" itemValue="Dirección General de Relaciones Internacionales y Cooperación Académica" />
+            <f:selectItem itemLabel="Dirección General de Recursos Materiales" itemValue="Dirección General de Recursos Materiales" />
+            <f:selectItem itemLabel="Dirección General de Recursos Humanos" itemValue="Dirección General de Recursos Humanos" />
+            <f:selectItem itemLabel="Dirección General de Recursos Educativos" itemValue="Dirección General de Recursos Educativos" />
+            <f:selectItem itemLabel="Dirección General de Radio Universitaria" itemValue="Dirección General de Radio Universitaria" />
+            <f:selectItem itemLabel="Dirección General de Publicaciones" itemValue="Dirección General de Publicaciones" />
+            <f:selectItem itemLabel="Dirección General de Patrimonio Cultural" itemValue="Dirección General de Patrimonio Cultural" />
+            <f:selectItem itemLabel="Dirección General de Orientación Educativa y Vocacional" itemValue="Dirección General de Orientación Educativa y Vocacional" />
+            <f:selectItem itemLabel="Dirección General de Investigación Científica" itemValue="Dirección General de Investigación Científica" />
+            <f:selectItem itemLabel="Dirección General de Innovación y Desarrollo Tecnológico" itemValue="Dirección General de Innovación y Desarrollo Tecnológico" />
+            <f:selectItem itemLabel="Dirección General de Innovación y Cultura Emprendedora" itemValue="Dirección General de Innovación y Cultura Emprendedora" />
+            <f:selectItem itemLabel="Dirección General de Información" itemValue="Dirección General de Información" />
+            <f:selectItem itemLabel="Dirección General de Educación Superior" itemValue="Dirección General de Educación Superior" />
+            <f:selectItem itemLabel="Dirección General de Educación Media Superior" itemValue="Dirección General de Educación Media Superior" />
+            <f:selectItem itemLabel="Dirección General de Educación Continua" itemValue="Dirección General de Educación Continua" />
+            <f:selectItem itemLabel="Dirección General de Divulgación Científica" itemValue="Dirección General de Divulgación Científica" />
+            <f:selectItem itemLabel="Dirección General de Difusión Cultural" itemValue="Dirección General de Difusión Cultural" />
+            <f:selectItem itemLabel="Dirección General de Desarrollo del Personal Académico" itemValue="Dirección General de Desarrollo del Personal Académico" />
+            <f:selectItem itemLabel="Dirección General de Cultura Física y Deporte" itemValue="Dirección General de Cultura Física y Deporte" />
+            <f:selectItem itemLabel="Dirección General de Atención Al Sector Social y Productivo" itemValue="Dirección General de Atención Al Sector Social y Productivo" />
+            <f:selectItem itemLabel="Dirección General de Administración Escolar" itemValue="Dirección General de Administración Escolar" />
+            <f:selectItem itemLabel="Otro" itemValue="Otro" />
+            
+                  
+            
+            
+        </b:selectOneMenu>
+                    
+                    
+       
+                  
+        <b:inputText label="Correo" id="correo" value="#{usuarionormalController.selected.correo}" title="#{bundle.CreateUsuarionormalTitle_correo}" required="true" requiredMessage="#{bundle.CreateUsuarionormalRequiredMessage_correo}"/>
+                 
+                    
+                    
+     
+      
+         <b:inputSecret id="contraseña" value="#{usuarionormalController.selected.contraseña}" title="#{bundle.CreateUsuarionormalTitle_contraseña}" required="true" requiredMessage="#{bundle.CreateUsuarionormalRequiredMessage_contraseña}" fieldId="j_password" name="j_password"
+      tiny-screen="two-thirds" medium-screen="10" label-tiny-screen="one-third"
+      label-medium-screen="2"
+      label="Contraseña" span="9" placeholder=""  />
+                    
+                        
+
+ 
+          
+          <b:commandButton look="success" action="#{usuarionormalController.create}" value="Crear Usuario">
+                 
+          </b:commandButton>
+         
+          <h:link href="iniciarSesion" value="Volver"/>
+      
+          <b:messages style="color:blue" id="message" />
+           
+
+  
+     </b:form>
+             
+                
+                  
+                    
+                 
+                    
+                </b:column>
+            </b:row>
+        </b:container> 
+        <style type="text/css">
+        .sub-header {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        
+        .element.style{
+            
+            background:#009966;
+             color: white;
+        }
+         .crearT{
+           
+            background:yellowgreen;
+            color: black;
+            border-color: green;
+        }
+        
+        
+        .navSesion{
+            background: #009966;
+             color: white;
+        }
+        
+        .navCrear{
+            
+            background: #009966;
+             color: whitesmoke;
+        }
+        .navbar-fixed-top {
+            border: 0 none;
+        }
+        .sidebar {
+            display: none;
+        }
+        @media (min-width: 768px) {
+        .sidebar {
+            background-color: #009966;
+            border-right: 1px solid #eee;
+            bottom: 0;
+            display: block;
+            left: 0;
+            overflow-x: hidden;
+            overflow-y: auto;
+            padding: 20px;
+            position: fixed;
+            top: 51px;
+            color: whitesmoke;
+            z-index: 1000;
+        }
+        }
+        .nav-list {
+            margin-bottom: 20px;
+            margin-left: -20px;
+            margin-right: -21px;
+        }
+        .nav-list > li > a {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .nav-list > .active > a, .nav-sidebar > .active > a:hover, .nav-sidebar > .active > a:focus {
+            background-color: #428bca;
+            color: #white;
+        }
+        .main {
+            padding: 20px;
+        }
+        @media (min-width: 768px) {
+        .main {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        }
+        .main .page-header {
+            margin-top: 0;
+        }
+        .placeholders {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .placeholders h4 {
+            margin-bottom: 0;
+        }
+        .placeholder {
+            margin-bottom: 20px;
+        }
+        .placeholder img {
+            border-radius: 50%;
+            display: inline-block;
+        }
+        
+        
+          a {
+        color: white;
+    }
+   
+    li a:hover:not(.active) {
+     background-color: white;
+      color: black;
+       
+ }
+ .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #101010;
+    background: #009966;
+    color: white;
+}
+
+.navbar-inverse .navbar-brand {
+    color: black;
+    background: #009966;
+}
+
+ .navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+
+            
+  
+ 
+        </style>
+    </h:body>
+</html>
+
+
+

@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <title>Sign In Template for BootsFaces</title>
+        <meta name="author" content="Riccardo Massera"></meta>
+        <style type="text/css">
+            .form-signin {
+                margin: 0 auto;
+                max-width: 330px;
+                padding: 15px;
+            }
+            
+            .login{
+                 width: 100vh;
+                 height: 100vh;
+                 background: url("img/green.jpg");
+                 background-size: 100%;
+                 background-repeat: no-repeat; 
+            }
+        </style>
+    </h:head>
+    <h:body style="padding-top: 60px; background-color:white ;" class="login">
+        <b:container>
+            
+           
+                
+            <h:form styleClass="form-signin" prependId="false">
+                 <h1 style = "align:center; vertical-align:middle;">Bienvenidos</h1>
+                <h4>Elija el tipo de usuario para iniciar sesion</h4>
+             
+                        <b:column col-xs="6" col-sm="3" styleClass="placeholder">
+                          
+                               <b:button icon-flip="h" 
+              value="Normal" outcome="iniciarSesion.xhtml"
+              look="success" size="lg"  />
+                            
+                            
+                        </b:column>
+                  <hr/>
+                      <br/>
+                       <br/>
+                     
+                        <b:column col-xs="6" col-sm="3" styleClass="placeholder">
+                          
+                            
+                               <b:button icon-flip="h" 
+              value="Especialista" outcome="IniciarSesionEspe.xhtml"
+              look="success" size="lg"  />
+                            
+                            
+                        </b:column>
+                <hr/>
+                   <br/>
+                 
+                      <b:column col-xs="6" col-sm="3" styleClass="placeholder">
+                           
+                            
+                               <b:button icon-flip="h" 
+              value="Administrador" outcome="IniciarSesionAdmin.xhtml"
+              look="success" size="lg"  />
+                            
+                            
+                        </b:column>
+                        <hr/>
+                      
+                                
+                 
+                 
+            
+            </h:form>
+            
+        </b:container>
+        
+    </h:body>
+</html>
