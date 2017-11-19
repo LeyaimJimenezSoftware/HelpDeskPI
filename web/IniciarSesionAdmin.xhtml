@@ -17,7 +17,7 @@
              .login{
                  width: 100vh;
                  height: 100vh;
-                 background: url("img/green.jpg");
+                 background: url("img/udc8.jpg");
                  background-size: 100%;
                  background-repeat: no-repeat; 
             }
@@ -26,20 +26,20 @@
     <h:body style="padding-top: 60px; background-color:white ;" class="login">
         <b:container>
             <h:form styleClass="form-signin" prependId="false">
-                <h2 class="form-signin-heading">Please sign in</h2>
-                <b:inputText id="email" placeholder="Usuario"  >
-                    <f:facet name="prepend">
-                        <b:icon name="user" />
-                    </f:facet>
+                <h2 class="form-signin-heading">Por Favor Iniciar Sesión</h2>
+                <b:inputText id="email" placeholder="Correo"  >
+                      <f:facet name="prepend">
+                <h:outputText value="@" />
+                  </f:facet>
                 </b:inputText>
                 <b:inputText id="password" placeholder="Password" type="password">
                     <f:facet name="prepend">
                         <b:iconAwesome name="key" />
                     </f:facet>
                 </b:inputText>
-                <b:selectBooleanCheckbox value="true" caption="remember me"/>
-                <b:commandButton look="success" value="Sign In" icon="log-in" size="lg"   tiny-screen="half" offset-sm="3" />
-                <h:link outcome="/index" value="Regresar a seleccionar usuario"/>
+                <b:selectBooleanCheckbox value="true" caption="Recordarme"/>
+                <b:commandButton look="success" value="Iniciar Sesión"  size="lg"    action="#{bean.submit}"/>
+                <h:link outcome="/index" value="Regresar"/>
            
                 <b:button outcome="/pages/admin/index.xhtml" value="Prueba" large-screen="full-width" />
               
