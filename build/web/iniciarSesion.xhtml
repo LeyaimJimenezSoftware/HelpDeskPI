@@ -14,25 +14,33 @@
                 max-width: 330px;
                 padding: 15px;
             }
+            .backg{
+                
+                 width: 100vh;
+                 height: 100vh;
+                 background: url("img/udc9.JPG");
+                 background-size: 100%;
+                 background-repeat: no-repeat; 
+            }
         </style>
     </h:head>
-    <h:body style="padding-top: 60px; background-color:white ;">
+    <h:body style="padding-top: 60px; background-color:white ;" class="backg">
         <b:container>
             <h:form styleClass="form-signin" prependId="false">
-                <h2 class="form-signin-heading">Please sign in</h2>
-                <b:inputText id="email" placeholder="Usuario"  >
+                <h2 class="form-signin-heading">Por Favor Iniciar Sesión</h2>
+                <b:inputText id="email" placeholder="Correo"  >
                     <f:facet name="prepend">
-                        <b:icon name="user" />
-                    </f:facet>
+                <h:outputText value="@" />
+                  </f:facet>
                 </b:inputText>
-                <b:inputText id="password" placeholder="Password" type="password">
+                <b:inputText id="password" placeholder="Contraseña" type="password">
                     <f:facet name="prepend">
                         <b:iconAwesome name="key" />
                     </f:facet>
                 </b:inputText>
-                <b:selectBooleanCheckbox value="true" caption="remember me"/>
-                <b:commandButton look="success" value="Sign In" icon="log-in" size="lg"   tiny-screen="half" offset-sm="3" />
-                   <h:link outcome="Create" value="Crear Usuario"/>
+                <b:selectBooleanCheckbox value="true" caption="Recordarme"/>
+                <b:commandButton look="success" value="Iniciar Sesión" icon="log-in" size="lg"    />
+                   <h:link outcome="Create" value="Crear Nuevo Usuario"/>
                    
                      <b:button outcome="/pages/user/index/ticket/index.xhtml" value="Prueba" large-screen="full-width" />
             </h:form>

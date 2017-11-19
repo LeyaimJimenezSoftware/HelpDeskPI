@@ -14,33 +14,49 @@
                 max-width: 330px;
                 padding: 15px;
             }
+            
+            .back{
+                
+                 width: 100vh;
+                 height: 100vh;
+                 background: url("img/udc7.jpg");
+                 background-size: 100%;
+                 background-repeat: no-repeat; 
+            }
+            .rememberp{
+                color: white;
+                 background-color: white;
+            }
+            .form {
+            color:white;
+           
+             }
         </style>
     </h:head>
-    <h:body style="padding-top: 60px; background-color:white ;">
+    <h:body style="padding-top: 60px; background-color:white ;" class="back">
         <b:container>
             <h:form styleClass="form-signin" prependId="false">
-                <h2 class="form-signin-heading">Please sign in</h2>
+                <h2 class="form"  >Por Favor Iniciar Sesión</h2>
                 <b:inputText id="email" placeholder="Usuario"  >
-                    <f:facet name="prepend">
-                        <b:icon name="user" />
-                    </f:facet>
+                     <f:facet name="prepend">
+                <h:outputText value="@" />
+                  </f:facet>
                 </b:inputText>
                 <b:inputText id="password" placeholder="Password" type="password">
                     <f:facet name="prepend">
                         <b:iconAwesome name="key" />
                     </f:facet>
                 </b:inputText>
-                <b:selectBooleanCheckbox value="true" caption="remember me"/>
+                <b:selectBooleanCheckbox value="true" caption="Recordarme" class="rememberp"/>
             
              
-                <h:commandButton value="submit" action="#{bean.submit}">
-                 <f:ajax execute="@form" render="@form" />
-                 </h:commandButton>
+                 <b:commandButton look="success" value="Iniciar Sesión" icon="log-in" size="lg"   action="#{bean.submit}"/>
                 
-                   <h:link outcome="/index" value="Regresar a seleccionar usuario"/>
+                  
                    
                    
                  <b:button outcome="/pages/especialista/index/indexE.xhtml" value="Prueba" large-screen="full-width" />
+                  <h:link outcome="/index" value="Regresar"/>
                 
             </h:form>
             
