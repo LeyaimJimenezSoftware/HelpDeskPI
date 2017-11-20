@@ -6,7 +6,7 @@
       xmlns:b="http://bootsfaces.net/ui"
       xmlns:ui="http://java.sun.com/jsf/facelets">
     <h:head>
-        <title>Sistema De Ayuda De la Universidad De Colima/title>
+        <title>Sistema De Ayuda De la Universidad De Colima </title>
        
         
     </h:head>
@@ -28,70 +28,53 @@
                     <b:listLinks>
                         <b:navLink header="" />
                           <b:navLink outcome="#" value="Menú Principal " class ="menup"/>
-                        <b:navLink outcome="/pages/especialista/ticket/List" value="Menú Ticket" />
-                        <b:navLink outcome="/pages/especialista/ticketAsignado/List" value="Menú Asignación" />                     
+                        <b:navLink outcome="/pages/especialista/ticket/List" value="Menú Ticket" class="menut"/>
+                        <b:navLink outcome="/pages/especialista/ticketAsignado/List" value="Menú Asignación" class="menuA"/>                     
                          <b:navLink href="#" value="Ayuda" />
                     </b:listLinks>
                   
                 </b:column>
+                 <b:column col-sm="9" offset-sm="3" col-md="10" offset="3" styleClass="main">
+                   
+                    <h2>Bienvenido A El Centro de Ayuda De La Universidad De Colima</h2>
                 
+                 </b:column>
                 <b:column col-sm="9" offset-sm="3" col-md="10" offset="2" styleClass="main">
                    
-                    <h1>Dashboard</h1>
+                    
                 
-                    <b:row styleClass="placeholders">
-                        <b:column col-xs="6" col-sm="3" styleClass="placeholder">
-                            <img data-src="holder.js/200x200/sky" class="img-responsive" alt="Generic placeholder thumbnail"/>
-                            <h4>Label</h4>
-                            <span class="text-muted">Something else</span>
-                        </b:column>
-                        <b:column col-xs="6" col-sm="3" styleClass="placeholder">
-                            <img data-src="holder.js/200x200/vine" class="img-responsive" alt="Generic placeholder thumbnail"/>
-                            <h4>Label</h4>
-                            <span class="text-muted">Something else</span>
-                        </b:column>
-                        <b:column col-xs="6" col-sm="3" styleClass="placeholder">
-                            <img data-src="holder.js/200x200/sky" class="img-responsive" alt="Generic placeholder thumbnail"/>
-                            <h4>Label</h4>
-                            <span class="text-muted">Something else</span>
-                        </b:column>
-                        <b:column col-xs="6" col-sm="3" styleClass="placeholder">
-                            <img data-src="holder.js/200x200/vine" class="img-responsive" alt="Generic placeholder thumbnail"/>
-                            <h4>Label</h4>
-                            <span class="text-muted">Something else</span>
-                        </b:column>
-                    </b:row>
-                    <h1>Section title</h1>
-                    <hr/>
-                    <b:row styleClass="table-responsive">
-                        <h:dataTable styleClass="table table-striped" value="#{loremIpsumBean.items}" var="item" rows="15">
-                            <h:column>
-                                <f:facet name="header"><h:outputText value="#" /></f:facet>
-                                <h:outputText value="#{item.h1}" />
-                            </h:column>
-                            <h:column>
-                                <f:facet name="header"><h:outputText value="Header" /></f:facet>
-                                <h:outputText value="#{item.h2}" />
-                            </h:column>
-                            <h:column>
-                                <f:facet name="header"><h:outputText value="Header" /></f:facet>
-                                <h:outputText value="#{item.h3}" />
-                            </h:column>
-                            <h:column>
-                                <f:facet name="header"><h:outputText value="Header" /></f:facet>
-                                <h:outputText value="#{item.h4}" />
-                            </h:column>
-                            <h:column>
-                                <f:facet name="header"><h:outputText value="Header" /></f:facet>
-                                <h:outputText value="#{item.h5}" />
-                            </h:column>
-                        </h:dataTable>
-                    </b:row>
+                    <b:container   class="galeria">
+                        
+             <b:image small-screen="one-third" value="/img/udc7.jpg"   />
+             <b:image small-screen="one-third" value="/img/udc8.jpg" />
+             <b:image small-screen="one-third"  value="/img/udc9.JPG" />
+                        
+                    </b:container>      
+                   
                 </b:column>
             </b:row>
         </b:container> 
         <style type="text/css">
-        .sub-header {
+        
+              .galeria{
+                
+                display: flex;
+                
+              
+                
+                
+                
+            }    
+            img{
+                
+                width: 30%;
+                height: 250px;
+                
+            }
+            
+            
+            
+            .sub-header {
             border-bottom: 1px solid #eee;
             padding-bottom: 10px;
         }
@@ -187,8 +170,11 @@
    
     li a:hover:not(.active) {
      background-color: white;
-      color: black;
-       
+      color: black;  
+ }
+ .menut:hover:not(.active){
+    background-color: white;
+      color: black;   
  }
  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
     border-color: #101010;
