@@ -39,22 +39,59 @@
                     </b:listLinks>
                   
                 </b:column>
-                <b:column col-sm="9" offset-sm="3" col-md="10" offset="3" styleClass="main">
-                    <h2>Bienvenido A El Centro de Ayuda De La Universidad De Colima</h2>
-                </b:column>
-                  
-                <b:column col-sm="9" offset-sm="3" col-md="10" offset="2" styleClass="main">
-                    
                 
-                    <b:container   class="galeria">
-                        
-             <b:image small-screen="one-third" value="/img/udc5.jpg"   />
-             <b:image small-screen="one-third" value="/img/udc6.png" />
-             <b:image small-screen="one-third"  value="/img/udc7.jpg" />
-                        
-                    </b:container>      
-                    
-                    
+                <b:column col-sm="9" offset-sm="3" col-md="10" offset="2" styleClass="main">
+                   
+                    <h1>Dashboard</h1>
+                
+                    <b:row styleClass="placeholders">
+                        <b:column col-xs="6" col-sm="3" styleClass="placeholder">
+                            <img data-src="holder.js/200x200/sky" class="img-responsive" alt="Generic placeholder thumbnail"/>
+                            <h4>Label</h4>
+                            <span class="text-muted">Something else</span>
+                        </b:column>
+                        <b:column col-xs="6" col-sm="3" styleClass="placeholder">
+                            <img data-src="holder.js/200x200/vine" class="img-responsive" alt="Generic placeholder thumbnail"/>
+                            <h4>Label</h4>
+                            <span class="text-muted">Something else</span>
+                        </b:column>
+                        <b:column col-xs="6" col-sm="3" styleClass="placeholder">
+                            <img data-src="holder.js/200x200/sky" class="img-responsive" alt="Generic placeholder thumbnail"/>
+                            <h4>Label</h4>
+                            <span class="text-muted">Something else</span>
+                        </b:column>
+                        <b:column col-xs="6" col-sm="3" styleClass="placeholder">
+                            <img data-src="holder.js/200x200/vine" class="img-responsive" alt="Generic placeholder thumbnail"/>
+                            <h4>Label</h4>
+                            <span class="text-muted">Something else</span>
+                        </b:column>
+                    </b:row>
+                    <h1>Section title</h1>
+                    <hr/>
+                    <b:row styleClass="table-responsive">
+                        <h:dataTable styleClass="table table-striped" value="#{loremIpsumBean.items}" var="item" rows="15">
+                            <h:column>
+                                <f:facet name="header"><h:outputText value="#" /></f:facet>
+                                <h:outputText value="#{item.h1}" />
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header"><h:outputText value="Header" /></f:facet>
+                                <h:outputText value="#{item.h2}" />
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header"><h:outputText value="Header" /></f:facet>
+                                <h:outputText value="#{item.h3}" />
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header"><h:outputText value="Header" /></f:facet>
+                                <h:outputText value="#{item.h4}" />
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header"><h:outputText value="Header" /></f:facet>
+                                <h:outputText value="#{item.h5}" />
+                            </h:column>
+                        </h:dataTable>
+                    </b:row>
                 </b:column>
             </b:row>
         </b:container> 
